@@ -31,7 +31,12 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+*   [ ] **I. Content Integrity**: Does the plan account for ensuring content is original and accurate?
+*   [ ] **II. Rigorous Sourcing**: Does the plan include steps for citation management and source verification?
+*   [ ] **III. Accessible Academic Style**: Does the design support features required for academic content (glossaries, exercises, diagrams)?
+*   [ ] **IV. Bilingual Delivery**: Does the architecture explicitly support i18n for English and Urdu?
+*   [ ] **V. Docusaurus Implementation**: Is the plan based on Docusaurus v3 and does it include a deployment strategy for GitHub Pages?
+*   [ ] **VI. Modular Structure**: Does the plan respect the 4-module structure?
 
 ## Project Structure
 

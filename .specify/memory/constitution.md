@@ -1,55 +1,60 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+    Sync Impact Report
+
+    - Version change: 0.0.0 -> 1.0.0
+    - Change type: Major (Initial constitution)
+    - Summary: Establishes the foundational principles for the "Physical AI & Humanoid Robotics — Textbook" project, covering content, sourcing, style, technical implementation, and structure.
+    - Added Sections:
+        - Principle I: Content Integrity
+        - Principle II: Rigorous Sourcing & Citation
+        - Principle III: Accessible Academic Style
+        - Principle IV: Bilingual Delivery (English & Urdu)
+        - Principle V: Production-Grade Docusaurus Implementation
+        - Principle VI: Modular Structure
+    - Removed Sections: None
+    - Templates requiring updates:
+        - [ ] .specify/templates/plan-template.md (Review against new principles)
+        - [ ] .specify/templates/spec-template.md (Review against new principles)
+        - [ ] .specify/templates/tasks-template.md (Review against new principles)
+    - Follow-up TODOs:
+        - TODO(SECTION_2_NAME): Define additional constraints, security requirements, or performance standards if necessary.
+        - TODO(SECTION_3_NAME): Define the development workflow, review process, and quality gates.
+-->
+# Physical AI & Humanoid Robotics — Textbook Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Content Integrity
+All content must be accurate, original, and completely free of plagiarism. Originality will be verified through automated checks.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Rigorous Sourcing & Citation
+All factual claims and referenced concepts must be supported by APA-style citations. The project will include a minimum of 15 distinct sources, with at least 50% sourced from peer-reviewed academic journals, conference proceedings, or equivalent scholarly publications.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Accessible Academic Style
+The writing style must be clear, formal, and academic, tailored for a Grade 10–12 reading comprehension level. Each lesson must include an introduction, detailed explanations with real-world examples, a summary, at least one explanatory diagram, a set of exercises, and a glossary of key terms.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Bilingual Delivery (English & Urdu)
+The entire book, including all content, navigation, and UI elements, must be fully implemented and functional in both English and Urdu. A seamless language toggle must be present on every page.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Production-Grade Docusaurus Implementation
+The final output must be a valid Docusaurus v3 project. The site must build without any errors, feature automatically generated sidebars, and include a pre-configured GitHub Actions workflow for successful deployment to GitHub Pages.
 
-### [PRINCIPLE_6_NAME]
-
-
-[PRINCIPLE__DESCRIPTION]
+### VI. Modular Structure
+The book is organized into 4 modules, each containing 2-3 chapters or sub-chapters, for a total of 4,000-5,000 words.
 
 ## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+<!-- TODO(SECTION_2_NAME): Define additional constraints, security requirements, or performance standards if necessary. -->
 
 [SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+
 
 ## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+<!-- TODO(SECTION_3_NAME): Define the development workflow, review process, and quality gates. -->
 
 [SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This Constitution is the single source of truth for project principles and governance. It supersedes all other practices and documentation. All development, reviews, and contributions must verify compliance with this constitution. Amendments require a documented proposal, formal approval from project maintainers, and a clear migration plan for any affected components.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-08 | **Last Amended**: 2025-12-08

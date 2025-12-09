@@ -5,6 +5,10 @@
 **Status**: Draft  
 **Input**: User description: "$ARGUMENTS"
 
+<!--
+  **Author's Note**: Before defining scenarios and requirements, please review the project constitution at `.specify/memory/constitution.md` to ensure all specifications align with the project's core principles.
+-->
+
 ## User Scenarios & Testing *(mandatory)*
 
 <!--

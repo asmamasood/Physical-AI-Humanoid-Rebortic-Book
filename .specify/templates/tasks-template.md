@@ -12,6 +12,10 @@ description: "Task list template for feature implementation"
 
 **Organization**: Tasks are grouped by user story to enable independent implementation and testing of each story.
 
+<!--
+  **Author's Note**: Before creating tasks, please review the project constitution at `.specify/memory/constitution.md`. All tasks must align with the project's core principles, including those for bilingual content, citation, and technical implementation.
+-->
+
 ## Format: `[ID] [P?] [Story] Description`
 
 - **[P]**: Can run in parallel (different files, no dependencies)
