@@ -1,0 +1,152 @@
+---
+sidebar_position: 4
+---
+
+# Markdown Features (Urdu - Placeholder)
+
+Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**. (Urdu - Placeholder)
+
+## Front Matter (Urdu - Placeholder)
+
+Markdown documents have metadata at the top called [Front Matter](https://jekyllrb.com/docs/front-matter/): (Urdu - Placeholder)
+
+```text title="my-doc.md"
+// highlight-start
+---
+id: my-doc-id
+title: My document title (Urdu - Placeholder)
+description: My document description (Urdu - Placeholder)
+slug: /my-custom-url
+---
+// highlight-end
+
+## Markdown heading (Urdu - Placeholder)
+
+Markdown text with [links](./hello.md) (Urdu - Placeholder)
+```
+
+## Links (Urdu - Placeholder)
+
+Regular Markdown links are supported, using url paths or relative file paths. (Urdu - Placeholder)
+
+```md
+Let's see how to [Create a page](/create-a-page). (Urdu - Placeholder)
+```
+
+```md
+Let's see how to [Create a page](./create-a-page.md). (Urdu - Placeholder)
+```
+
+**Result:** Let's see how to [Create a page](./create-a-page.md). (Urdu - Placeholder)
+
+## Images (Urdu - Placeholder)
+
+Regular Markdown images are supported. (Urdu - Placeholder)
+
+You can use absolute paths to reference images in the static directory (`static/img/docusaurus.png`): (Urdu - Placeholder)
+
+```md
+![Docusaurus logo](/img/docusaurus.png)
+```
+
+![Docusaurus logo](/img/docusaurus.png)
+
+You can reference images relative to the current file as well. This is particularly useful to colocate images close to the Markdown files using them: (Urdu - Placeholder)
+
+```md
+![Docusaurus logo](./img/docusaurus.png)
+```
+
+## Code Blocks (Urdu - Placeholder)
+
+Markdown code blocks are supported with Syntax highlighting. (Urdu - Placeholder)
+
+````md
+```jsx title="src/components/HelloDocusaurus.js"
+function HelloDocusaurus() {
+  return <h1>Hello, Docusaurus! (Urdu - Placeholder)</h1>;
+}
+```
+````
+
+```jsx title="src/components/HelloDocusaurus.js"
+function HelloDocusaurus() {
+  return <h1>Hello, Docusaurus! (Urdu - Placeholder)</h1>;
+}
+```
+
+## Admonitions (Urdu - Placeholder)
+
+Docusaurus has a special syntax to create admonitions and callouts: (Urdu - Placeholder)
+
+```md
+:::tip My tip (Urdu - Placeholder)
+
+Use this awesome feature option (Urdu - Placeholder)
+
+:::
+
+:::danger Take care (Urdu - Placeholder)
+
+This action is dangerous (Urdu - Placeholder)
+
+:::
+```
+
+:::tip My tip (Urdu - Placeholder)
+
+Use this awesome feature option (Urdu - Placeholder)
+
+:::
+
+:::danger Take care (Urdu - Placeholder)
+
+This action is dangerous (Urdu - Placeholder)
+
+:::
+
+## MDX and React Components (Urdu - Placeholder)
+
+[MDX](https://mdxjs.com/) can make your documentation more **interactive** and allows using any **React components inside Markdown**: (Urdu - Placeholder)
+
+```jsx
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '20px',
+      color: '#fff',
+      padding: '10px',
+      cursor: 'pointer',
+    }}
+    onClick={() => {
+      alert(`You clicked the color ${color} with label ${children}`)
+    }}>
+    {children}
+  </span>
+);
+
+This is <Highlight color="#25c2a0">Docusaurus green</Highlight> ! (Urdu - Placeholder)
+
+This is <Highlight color="#1877F2">Facebook blue</Highlight> ! (Urdu - Placeholder)
+```
+
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '20px',
+      color: '#fff',
+      padding: '10px',
+      cursor: 'pointer',
+    }}
+    onClick={() => {
+      alert(`You clicked the color ${color} with label ${children}`);
+    }}>
+    {children}
+  </span>
+);
+
+This is <Highlight color="#25c2a0">Docusaurus green</Highlight> ! (Urdu - Placeholder)
+
+This is <Highlight color="#1877F2">Facebook blue</Highlight> ! (Urdu - Placeholder)
