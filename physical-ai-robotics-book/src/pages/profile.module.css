@@ -1,0 +1,348 @@
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #1e293b 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #64748b;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.backButton {
+    background: transparent;
+    border: 1px solid #cbd5e1;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #64748b;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.backButton:hover {
+    background: #f1f5f9;
+    color: var(--ifm-color-primary);
+    border-color: var(--ifm-color-primary);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+}
+
+[data-theme='dark'] .card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    color: #3b82f6;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statLabel {
+    font-size: 0.8rem;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.statValue {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #1e293b;
+}
+
+[data-theme='dark'] .statValue {
+    color: #f8fafc;
+}
+
+.progressBar {
+    height: 10px;
+    background: #e2e8f0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.progressFill {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6 0%, #60a5fa 100%);
+}
+
+/* Leaderboard */
+.leaderboard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lbEntry {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: #f8fafc;
+    border-radius: 10px;
+    gap: 12px;
+}
+
+[data-theme='dark'] .lbEntry {
+    background: #0f172a;
+}
+
+.lbMe {
+    border: 2px solid #3b82f6;
+    background: #eff6ff;
+}
+
+.lbRank {
+    font-weight: 800;
+    color: #94a3b8;
+    width: 20px;
+}
+
+.lbUser {
+    flex: 1;
+    font-weight: 500;
+}
+
+.lbPoints {
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.lbLevel {
+    font-size: 0.75rem;
+    background: #dcfce7;
+    color: #166534;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* Studio & Agents */
+.fullWidth {
+    grid-column: 1 / -1;
+}
+
+.studioGrid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+}
+
+@media (max-width: 900px) {
+    .studioGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.creatorForm h3,
+.agentsList h3 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #475569;
+}
+
+.skillsSelect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+[data-theme='dark'] .skillsSelect {
+    background: #0f172a;
+    border-color: #334155;
+}
+
+.skillEntry {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.agentGrid {
+    display: grid;
+    gap: 15px;
+}
+
+.agentCard {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    position: relative;
+    transition: all 0.2s;
+}
+
+[data-theme='dark'] .agentCard {
+    background: #0f172a;
+    border-color: #334155;
+}
+
+.agentCard:hover {
+    transform: translateY(-3px);
+    border-color: #3b82f6;
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.1);
+}
+
+.agentAvatar {
+    font-size: 2.2rem;
+    background: white;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] .agentAvatar {
+    background: #1e293b;
+}
+
+.agentInfo h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.agentInfo p {
+    margin: 6px 0 12px 0;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.agentSkills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.skillTag {
+    font-size: 0.7rem;
+    background: #3b82f6;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* Forms */
+.field {
+    margin-bottom: 20px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+.field input[type="text"],
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    background: #f8fafc;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+[data-theme='dark'] .field input[type="text"],
+[data-theme='dark'] .field select,
+[data-theme='dark'] .field textarea {
+    background: #0f172a;
+    border-color: #334155;
+    color: white;
+}
+
+.saveButton {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.saveButton:hover:not(:disabled) {
+    box-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
+}
+
+.error {
+    color: #ef4444;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.success {
+    color: #10b981;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.hint {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    font-style: italic;
+}

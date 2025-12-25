@@ -1,0 +1,23 @@
+# Admin: Ingest content (requires ADMIN_SECRET)
+curl -X POST http://localhost:8000/api/ingest \
+  -H "Authorization: Bearer YOUR_ADMIN_SECRET"
+
+# Chat: General Question
+curl -X POST http://localhost:8000/api/chat \
+  -H "Content-Type: application/json" \
+  -d '{"query": "What is physical AI?", "top_k": 3}'
+
+# Chat: Selective (Highlight)
+curl -X POST http://localhost:8000/api/selective-chat \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "Explain this in simple terms",
+    "selection_text": "Physical AI (PAI) refers to AI agents that have a physical body and can interact with the real world.",
+    "selection_meta": {"url": "http://localhost:3000/docs/intro"}
+  }'
+
+# Metadata: Get collection info
+curl http://localhost:8000/api/meta
+
+# Health Check
+curl http://localhost:8000/health

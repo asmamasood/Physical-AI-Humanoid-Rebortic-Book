@@ -1,0 +1,11 @@
+{
+  "name": "docusaurus-plugin-rag-chatboard",
+  "version": "1.0.0",
+  "description": "RAG Chatboard plugin for Docusaurus",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  }
+}

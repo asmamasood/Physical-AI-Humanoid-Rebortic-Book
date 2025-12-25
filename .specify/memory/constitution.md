@@ -1,60 +1,73 @@
 <!--
-    Sync Impact Report
-
-    - Version change: 0.0.0 -> 1.0.0
-    - Change type: Major (Initial constitution)
-    - Summary: Establishes the foundational principles for the "Physical AI & Humanoid Robotics — Textbook" project, covering content, sourcing, style, technical implementation, and structure.
-    - Added Sections:
-        - Principle I: Content Integrity
-        - Principle II: Rigorous Sourcing & Citation
-        - Principle III: Accessible Academic Style
-        - Principle IV: Bilingual Delivery (English & Urdu)
-        - Principle V: Production-Grade Docusaurus Implementation
-        - Principle VI: Modular Structure
-    - Removed Sections: None
-    - Templates requiring updates:
-        - [ ] .specify/templates/plan-template.md (Review against new principles)
-        - [ ] .specify/templates/spec-template.md (Review against new principles)
-        - [ ] .specify/templates/tasks-template.md (Review against new principles)
-    - Follow-up TODOs:
-        - TODO(SECTION_2_NAME): Define additional constraints, security requirements, or performance standards if necessary.
-        - TODO(SECTION_3_NAME): Define the development workflow, review process, and quality gates.
+<SyncImpactReport>
+  <VersionChange>
+    <OldVersion>N/A</OldVersion>
+    <NewVersion>1.0.0</NewVersion>
+  </VersionChange>
+  <ModifiedPrinciples>
+    <Principle Name="Interdisciplinary Collaboration">Added</Principle>
+    <Principle Name="Ethical AI Development">Added</Principle>
+    <Principle Name="Robustness & Safety Engineering">Added</Principle>
+    <Principle Name="Human-Robot Interaction Design">Added</Principle>
+    <Principle Name="Continuous Learning & Adaptation">Added</Principle>
+  </ModifiedPrinciples>
+  <AddedSections>
+    <Section Name="Technical Standards"/>
+    <Section Name="Research & Development Workflow"/>
+  </AddedSections>
+  <RemovedSections>
+    <Section Name="[PRINCIPLE_6_NAME]"/>
+    <Section Name="[SECTION_2_NAME]"/>
+    <Section Name="[SECTION_3_NAME]"/>
+  </RemovedSections>
+  <TemplatesRequiringUpdates>
+    <Template Path=".specify/templates/plan-template.md">✅ updated</Template>
+    <Template Path=".specify/templates/spec-template.md">✅ updated</Template>
+    <Template Path=".specify/templates/tasks-template.md">✅ updated</Template>
+    <Template Path=".gemini/commands/sp.adr.toml">✅ updated</Template>
+    <Template Path=".gemini/commands/sp.analyze.toml">✅ updated</Template>
+    <Template Path=".gemini/commands/sp.checklist.toml">✅ updated</Template>
+    <Template Path=".gemini/commands/sp.clarify.toml">✅ updated</Template>
+    <Template Path=".gemini/commands/sp.constitution.toml">✅ updated</Template>
+    <Template Path=".gemini/commands/sp.git.commit_pr.toml">✅ updated</Template>
+    <Template Path=".gemini/commands/sp.implement.toml">✅ updated</Template>
+    <Template Path=".gemini/commands/sp.phr.toml">✅ updated</Template>
+    <Template Path=".gemini/commands/sp.plan.toml">✅ updated</Template>
+    <Template Path=".gemini/commands/sp.specify.toml">✅ updated</Template>
+    <Template Path=".gemini/commands/sp.tasks.toml">✅ updated</Template>
+    <Template Path="physical-ai-robotics-book/README.md">✅ updated</Template>
+  </TemplatesRequiringUpdates>
+  <FollowUpTODOs>
+    <TODO Item="None"/>
+  </FollowUpTODOs>
+</SyncImpactReport>
 -->
-# Physical AI & Humanoid Robotics — Textbook Constitution
+# Physical AI & Humanoid Robotics Constitution
 
 ## Core Principles
 
-### I. Content Integrity
-All content must be accurate, original, and completely free of plagiarism. Originality will be verified through automated checks.
+### I. Interdisciplinary Collaboration
+This principle stresses the importance of collaboration across AI, robotics, biomechanics, cognitive science, and ethics. Successful development in Physical AI and Humanoid Robotics requires integrating diverse expertise to address complex challenges comprehensively.
 
-### II. Rigorous Sourcing & Citation
-All factual claims and referenced concepts must be supported by APA-style citations. The project will include a minimum of 15 distinct sources, with at least 50% sourced from peer-reviewed academic journals, conference proceedings, or equivalent scholarly publications.
+### II. Ethical AI Development
+This principle highlights the necessity of ethical standards, human well-being, autonomy, privacy, fairness, bias detection, transparency, and accountability. All development must prioritize the responsible creation and deployment of AI systems, ensuring they serve humanity beneficially and justly.
 
-### III. Accessible Academic Style
-The writing style must be clear, formal, and academic, tailored for a Grade 10–12 reading comprehension level. Each lesson must include an introduction, detailed explanations with real-world examples, a summary, at least one explanatory diagram, a set of exercises, and a glossary of key terms.
+### III. Robustness & Safety Engineering
+This principle emphasizes engineering for extreme robustness, reliability, and safety in unpredictable environments, including rigorous risk assessment and testing. Physical AI systems must be designed to operate dependably and securely, minimizing risks to users and the environment.
 
-### IV. Bilingual Delivery (English & Urdu)
-The entire book, including all content, navigation, and UI elements, must be fully implemented and functional in both English and Urdu. A seamless language toggle must be present on every page.
+### IV. Human-Robot Interaction Design
+This principle focuses on intuitive, natural, and trustworthy human-robot interaction, considering psychological, social, and cultural factors. Designing for seamless and acceptable interaction is crucial for the successful integration of humanoid robotics into society.
 
-### V. Production-Grade Docusaurus Implementation
-The final output must be a valid Docusaurus v3 project. The site must build without any errors, feature automatically generated sidebars, and include a pre-configured GitHub Actions workflow for successful deployment to GitHub Pages.
+### V. Continuous Learning & Adaptation
+This principle includes the concept of systems designed to continuously learn, adapt, and improve through real-world interaction. Physical AI systems must possess the capability to evolve their understanding and performance over time, responding to new data and experiences.
 
-### VI. Modular Structure
-The book is organized into 4 modules, each containing 2-3 chapters or sub-chapters, for a total of 4,000-5,000 words.
+## Technical Standards
+Development must leverage advanced simulation environments for testing and validation, along with robust hardware-software co-design principles to ensure optimal performance and integration of physical and digital components.
 
-## [SECTION_2_NAME]
-<!-- TODO(SECTION_2_NAME): Define additional constraints, security requirements, or performance standards if necessary. -->
-
-[SECTION_2_CONTENT]
-
-
-## [SECTION_3_NAME]
-<!-- TODO(SECTION_3_NAME): Define the development workflow, review process, and quality gates. -->
-
-[SECTION_3_CONTENT]
-
+## Research & Development Workflow
+The workflow must be iterative and hypothesis-driven, encouraging rapid prototyping and experimentation. It should also include regular peer review and mechanisms for effective knowledge transfer across teams and disciplines.
 
 ## Governance
-This Constitution is the single source of truth for project principles and governance. It supersedes all other practices and documentation. All development, reviews, and contributions must verify compliance with this constitution. Amendments require a documented proposal, formal approval from project maintainers, and a clear migration plan for any affected components.
+This constitution supersedes all other practices. Amendments require thorough documentation, multi-stakeholder approval, and a clear migration plan. All development and operational practices must align with the core principles outlined herein. Compliance will be reviewed annually to ensure ongoing adherence to ethical, safety, and performance standards.
 
-**Version**: 1.0.0 | **Ratified**: 2025-12-08 | **Last Amended**: 2025-12-08
+**Version**: 1.0.0 | **Ratified**: 2025-12-09 | **Last Amended**: 2025-12-09

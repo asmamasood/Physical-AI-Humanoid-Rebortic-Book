@@ -1,0 +1,27 @@
+# RAG Chatboard Backend - Requirements
+# Install with: pip install -r backend/requirements.txt
+
+# Web Framework
+fastapi>=0.115.6
+uvicorn[standard]>=0.27.0
+pydantic>=2.10.3
+pydantic-settings>=2.1.0
+
+# AI/ML Services
+# CRITICAL: qdrant-client must be >= 1.16.2 for query_points support
+qdrant-client>=1.16.2
+cohere>=5.20.0
+google-generativeai>=0.8.3
+sentence-transformers>=3.0.0
+torch>=2.0.0
+
+# Database (optional)
+asyncpg>=0.29.0
+
+# Utilities
+python-dotenv>=1.0.0
+httpx>=0.26.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.23.0

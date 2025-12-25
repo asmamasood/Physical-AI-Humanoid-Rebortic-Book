@@ -1,0 +1,140 @@
+.floatingChatContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.toggleButton {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.toggleButton:hover {
+    transform: scale(1.1);
+}
+
+.chatWindow {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.chatHeader {
+    background-color: #1890ff;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.chatBody {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.message {
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.userMessage {
+    align-self: flex-end;
+    background-color: #1890ff;
+    color: white;
+    margin-left: auto;
+}
+
+.botMessage {
+    align-self: flex-start;
+    background-color: #e5e5ea;
+    color: black;
+    margin-right: auto;
+}
+
+.chatInputArea {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    background-color: white;
+}
+
+.input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 8px;
+    outline: none;
+}
+
+.sendButton {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.sendButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Dark mode adjustments if needed */
+[data-theme='dark'] .chatWindow {
+    background-color: #242526;
+    border-color: #444;
+}
+
+[data-theme='dark'] .chatBody {
+    background-color: #1b1b1d;
+}
+
+[data-theme='dark'] .botMessage {
+    background-color: #3e3e42;
+    color: white;
+}
+
+[data-theme='dark'] .input {
+    background-color: #3e3e42;
+    color: white;
+    border-color: #555;
+}

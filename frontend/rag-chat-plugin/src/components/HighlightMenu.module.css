@@ -1,0 +1,49 @@
+/* frontend/rag-chat-plugin/src/components/HighlightMenu.module.css */
+
+.highlightMenu {
+  position: absolute;
+  background-color: var(--doc-sidebar-background-color); /* Docusaurus theme variable */
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-border-radius);
+  box-shadow: var(--ifm-global-shadow-md);
+  padding: 5px;
+  z-index: 10000; /* Ensure it's on top of most content */
+  display: flex;
+  gap: 5px;
+  transform: translateX(-50%); /* Center horizontally relative to its left position */
+}
+
+.askButton {
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-color-white);
+  border: none;
+  padding: 8px 12px;
+  border-radius: var(--ifm-border-radius);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.askButton:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+.askButton:active {
+  background-color: var(--ifm-color-primary-darker);
+}
+
+/* Optional: Add a small arrow pointing to the selection */
+.highlightMenu::after {
+  content: '';
+  position: absolute;
+  bottom: -5px; /* Position below the menu */
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: var(--doc-sidebar-background-color);
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  border-right: 1px solid var(--ifm-color-emphasis-300);
+  z-index: 9999; /* Below the menu */
+}

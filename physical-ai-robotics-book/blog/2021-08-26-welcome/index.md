@@ -1,29 +1,33 @@
 ---
-slug: welcome
-title: Welcome
-authors: [slorber, yangshun]
-tags: [facebook, hello, docusaurus]
+slug: bridging-digital-physical
+title: Bridging Digital and Physical Reality
+authors: [masood]
+tags: [physical-ai, robotics, embodied-ai]
 ---
 
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
+Welcome to the official companion blog for **Physical AI & Humanoid Robotics**. This platform is dedicated to exploring the fascinating intersection where digital algorithms meet physical bodies.
 
-Here are a few tips you might find useful.
+![Physical AI Concept](/img/hero-light.png)
 
 <!-- truncate -->
 
-Simply add Markdown files (or folders) to the `blog` directory.
+## The Era of Embodied Intelligence
 
-Regular blog authors can be added to `authors.yml`.
+For decades, Artificial Intelligence lived primarily in servers—processing text, images, and data without ever touching the real world. That era is ending. 
 
-The blog post date can be extracted from filenames, such as:
+**Physical AI** refers to intelligent systems that have a physical body and must interact with the laws of physics. It's not just about "brains" anymore; it's about the complex feedback loop between sensing, thinking, and acting.
 
-- `2019-05-30-welcome.md`
-- `2019-05-30-welcome/index.md`
+### Why This Matters
 
-A blog post folder can be convenient to co-locate blog post images:
+1.  **Safety Critical**: Unlike a chatbot that can hallucinate an answer, a robot that "hallucinates" a movement can fall or cause damage.
+2.  **Real-Time Constraints**: Physical AI must operate in hard real-time. A 500ms delay in processing can mean the difference between stable walking and falling over.
+3.  **Sim-to-Real Gap**: Training in simulation is fast, but transferring those policies to the noisy, imperfect real world is one of the hardest challenges in modern robotics.
 
-![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)
+In this book (and this blog), we will dive deep into these challenges. We'll cover everything from **ROS 2** nodes and **Control Theory** to **Reinforcement Learning** for locomotion.
 
-The blog supports tags as well!
+Stay tuned for technical deep dives, tutorials, and updates!
+-   **Updates**: New features in the textbook and chatbot.
 
-**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+The chatbot (available on the book pages) is your study partner. It can summarize chapters, answer technical questions, and even quiz you on the material.
+
+Happy Reading!

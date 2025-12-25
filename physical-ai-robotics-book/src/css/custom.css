@@ -1,30 +1,201 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* Import modern fonts and Urdu support */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Core Colors - Soft & Elegant */
+  --ifm-color-primary: #2563eb;
+  /* Soft Royal Blue */
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+
+  /* Accents */
+  --color-accent-soft: #e0e7ff;
+  /* Very soft lavender/blue */
+  --color-text-primary: #1e293b;
+  /* Slate 800 */
+  --color-text-secondary: #64748b;
+  /* Slate 500 */
+
+  /* Backgrounds - High Key */
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f8fafc;
+  /* Slate 50 */
+
+  /* Typography */
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Playfair Display', serif;
+  /* Elegant serif for headings */
+
+  /* Navbar */
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.9);
+  --ifm-navbar-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  --ifm-navbar-height: 4.5rem;
+  --ifm-navbar-padding-vertical: 1rem;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark Mode (Secondary priority, but kept functional) */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #60a5fa;
+  --ifm-background-color: #0f172a;
+  /* Slate 900 */
+  --ifm-background-surface-color: #1e293b;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --ifm-navbar-background-color: rgba(15, 23, 42, 0.9);
+}
+
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-text-primary);
+  /* Very subtle gradient background */
+  background: radial-gradient(circle at top right, #f0f9ff 0%, #ffffff 50%);
+}
+
+[data-theme='dark'] body {
+  background: radial-gradient(circle at top right, #1e293b 0%, #0f172a 50%);
+}
+
+/* Urdu Content Special Styling */
+.urdu-content {
+  direction: rtl;
+  font-family: 'Noto Nastaliq Urdu', serif;
+  font-size: 1.25rem;
+  line-height: 2.2;
+  text-align: justify;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  border-right: 4px solid #2563eb;
+}
+
+[data-theme='dark'] .urdu-content {
+  background: rgba(30, 41, 59, 0.5);
+}
+
+/* Skeleton Loader Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.skeleton {
+  background: #f6f7f8;
+  background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-repeat: no-repeat;
+  background-size: 800px 104px;
+  display: block;
+  position: relative;
+  animation: shimmer 1s linear infinite forwards;
+  border-radius: 4px;
+}
+
+.skeleton-text {
+  height: 1.2rem;
+  margin-bottom: 0.8rem;
+  width: 100%;
+}
+
+/* Navbar Styling - Minimal & Clean */
+.navbar {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.navbar__brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
+}
+
+.navbar__logo {
+  height: 36px;
+  margin-right: 0.8rem;
+  opacity: 0.75;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+  filter: brightness(1.2);
+}
+
+.navbar__logo:hover {
+  opacity: 1;
+  filter: brightness(1);
+}
+
+.navbar__item {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  transition: color 0.2s;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--ifm-color-primary) !important;
+}
+
+/* Button Styling - Soft & Rounded */
+.button {
+  border-radius: 50px;
+  /* Pill shape */
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-transform: none;
+  /* Keep generic case */
+  letter-spacing: normal;
+}
+
+.button--primary {
+  background: var(--ifm-color-primary) !important;
+  border: none !important;
+  color: white !important;
+  box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.3);
+}
+
+.button--primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px 0 rgba(37, 99, 235, 0.4);
+}
+
+.button--secondary {
+  background: white !important;
+  border: 1px solid #e2e8f0 !important;
+  /* Slate 200 */
+  color: var(--color-text-primary) !important;
+}
+
+.button--secondary:hover {
+  border-color: var(--ifm-color-primary) !important;
+  color: var(--ifm-color-primary) !important;
+  background: #f8fafc !important;
+}
+
+/* Scrollbar - Minimal */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
 }

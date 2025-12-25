@@ -1,0 +1,14 @@
+# RAG Chatboard Ingestion Scripts - Requirements
+# Install with: pip install -r scripts/requirements.txt
+
+# Core dependencies
+cohere>=5.0.0
+qdrant-client>=1.7.0
+tiktoken>=0.5.0
+PyYAML>=6.0
+python-dotenv>=1.0.0
+sentence-transformers>=3.0.0
+torch>=2.0.0
+
+# Development/testing
+pytest>=7.4.0

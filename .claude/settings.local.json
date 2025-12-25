@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(npm run clear:*)",
+      "Bash(npm run build:*)",
+      "Bash(dir:*)",
+      "Bash(curl:*)",
+      "Bash(node -e \"import\\(''./auth.js''\\).then\\(m => {console.log\\(''Handler type:'', typeof m.auth.handler\\);}\\)\")",
+      "WebSearch",
+      "Bash(taskkill:*)",
+      "Bash(node:*)",
+      "Bash(find:*)"
+    ]
+  }
+}

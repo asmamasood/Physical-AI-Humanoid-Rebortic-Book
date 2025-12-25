@@ -1,19 +1,19 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+physical-ai:
+  label: Physical AI
+  permalink: /tags/physical-ai
+  description: Embodied Intelligence and AI in the physical world.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+robotics:
+  label: Robotics
+  permalink: /tags/robotics
+  description: Humanoid robotics and control systems.
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+ros2:
+  label: ROS 2
+  permalink: /tags/ros2
+  description: The Robotic Operating System.
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+embodied-ai:
+  label: Embodied AI
+  permalink: /tags/embodied-ai
+  description: AI that interacts with the physical world.
